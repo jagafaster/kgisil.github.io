@@ -1,0 +1,33 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.ani{
+    /* display: flexbox;
+    justify-content: center;
+    align-items: center; */
+    background-color: rgb(231, 122, 54);
+    width: 400px;
+    height: 100px;
+    border-radius: 25px;
+
+    animation-name: div-ani;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes div-ani{
+    0%{}
+
+    50%{
+        transform: translate(0, 200px);
+        width: 50px;
+        background-color: rgb(9, 41, 69);
+    }
+
+    100%{}
+}
